@@ -48,7 +48,7 @@ export const ourFileRouter = {
       // You can add additional processing here if needed
       // For example: save file info to database
       
-      return { uploadedBy: metadata.userId, fileUrl: file.url };
+      // Don't return anything - onUploadComplete should return void
     }),
 } satisfies FileRouter;
  
